@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FNP</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<style>
+		.margin-top-3 {
+			margin-top: 3em;
+		}
+	</style>
+</head>
+
+<body class="container">
+	<div style="color:white;background-color:red;display:flex; flex:1; align-items:center; flex-direction:column; justify-content:center">
+		<h1>Fake News Prediction : Editors Portal</h1>
+	</div>
+	<div class="col-sm-7 margin-top-3">
+		<h2>News Articles Stream</h2>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Article</th>
+						<th>isFake</th>
+					</tr>
+				</thead>
+				<tbody id="candidate-rows">
+				</tbody>
+			</table>
+		</div>
+		<div class="container-fluid">
+			<h2>Search news from News Publisher</h2>
+			<div id="msg"></div>
+			<input type="text" id="candidate" placeholder="Enter the news title" />
+			<br>
+			<br>
+			<br>
+			<a href="#" onclick="voteForCandidate(0)" class="btn btn-primary">Vote as fake</a>
+			<a href="#" onclick="voteForCandidate(1)" class="btn btn-primary">Vote as genuine</a>
+		</div>
+	</div>
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+
+</html>
